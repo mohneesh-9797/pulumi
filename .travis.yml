@@ -9,6 +9,13 @@ matrix:
   - if: type = cron
     os: linux
     env: NODE_VERSION=v13.11.0
+  - os: linux
+    arch: arm64
+    env: NODE_VERSION=v12.1.0 TRAVIS_PUBLISH_PACKAGES=true
+  - if: type = cron
+    arch: arm64
+    os: linux
+    env: NODE_VERSION=v13.11.0
 arch:
     - amd64
     - arm64
