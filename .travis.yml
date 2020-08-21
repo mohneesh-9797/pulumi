@@ -9,6 +9,9 @@ matrix:
   - if: type = cron
     os: linux
     env: NODE_VERSION=v13.11.0
+arch:
+    - amd64
+    - arm64
 language: go
 go: 1.14.x
 sudo: true
